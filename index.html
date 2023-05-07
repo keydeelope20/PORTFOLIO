@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#"><img src="image/LOGO.png"style= "width:150px;" alt="" /></a>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DESIGNER</p>
+                <h1> Hi, I'm <span>KARL IVAN</span><br> From Philippines</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/Lope2.jpg">
+            </div>
+            
+            <div class="about-col-2">
+                <h1 class="sub-title" > About Me</h1>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book. It has survived not only five centuries, but also the leap into 
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 
+                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                     recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="tab-titles">    
+                <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                <p class="tab-links" onclick="opentab('team')">Team Played at</p>
+                <p class="tab-links" onclick="opentab('awards')">Awards</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>UI/UX</span><br>ROBOT</li>
+                        <li> <span>Web Development</span><br>Designing WEB app</li>
+                        <li> <span>App Development</span><br>Application IOS/ANDROID</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="team">    
+                    <ul>
+                        <li> <span>2023</span><br>NICORPIL BLACK</li>
+                        <li> <span>2022</span><br>NICORPIL MAROON</li>
+                        <li> <span>2021</span><br>NICORPIL MAROON</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="awards">
+                    <ul>
+                        <li> <span>MVP</span><br>1</li>
+                        <li> <span>Mythical 5</span><br>5</li>
+                        <li> <span>Championship </span><br>3</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tablcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
