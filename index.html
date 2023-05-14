@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO WEBSITE</title>
-    <link rel="stylesheet" href="index.css">
+ <title>Portfolio Website</title>
+ <link rel="stylesheet" type="text/css" href="index.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,
+ 300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <a href="#"><img src="image/LOGO.png"style= "width:150px;" alt="" /></a>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>WEB DESIGNER</p>
-                <h1> Hi, I'm <span>KARL IVAN</span><br> From Philippines</h1>
-            </div>
-        </div>
-    </div>
-    <div id="about"></div>
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="image/Lope2.jpg">
-            </div>
-            
-            <div class="about-col-2">
-                <h1 class="sub-title" > About Me</h1>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type 
-                    specimen book. It has survived not only five centuries, but also the leap into 
-                    electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                     recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <div class="tab-titles">    
-                <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
-                <p class="tab-links" onclick="opentab('team')">Team Played at</p>
-                <p class="tab-links" onclick="opentab('awards')">Awards</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li> <span>UI/UX</span><br>ROBOT</li>
-                        <li> <span>Web Development</span><br>Designing WEB app</li>
-                        <li> <span>App Development</span><br>Application IOS/ANDROID</li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="team">    
-                    <ul>
-                        <li> <span>2023</span><br>NICORPIL BLACK</li>
-                        <li> <span>2022</span><br>NICORPIL MAROON</li>
-                        <li> <span>2021</span><br>NICORPIL MAROON</li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="awards">
-                    <ul>
-                        <li> <span>MVP</span><br>1</li>
-                        <li> <span>Mythical 5</span><br>5</li>
-                        <li> <span>Championship </span><br>3</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">CONTACT</a></li>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classlist.remove("active-link");
-            }
-            for(tabcontent of tablcontents){
-                tabcontent.classlist.remove("active-tab");
-            }
-            
-            event.currentTarget.classlist.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+            </ul>
+            <a href="#" class="btn">SUBSCRIBE</a>
+        </nav>
+<div class="content">
+    <h4> Hello, My Name is </h4>
+    <h1>KARL IVAN <span>LOPE</span></h1>
+    <h3>I am BSIT STUDENT</h3>
+<div class="newslatter"> 
+    <form>
+        <input type="email" name="email" id="mail" placeholder="Enter your Email">
+        <input type="sumbit" name="submit" value="Let's Start">
+    </form>
+</div>
+</div>
+    </div>
+    <section class="about">
+        <div class="main">
+            <img src="image/Lope2.jpg">
+            <div class="about-text">
+            <h2>ABOUT ME</h2>
+            <h5>DEVELOPER AND <span>DESIGNER</span> </h5>
+            <p> I AM KARL IVAN LOPE MALUPET NA MALUPET KAYANG MAGLARO NANG BUONG WEEK HAHAHAHHAH</p>
+            <button type="button">LET'S TALK</button>
+            </div>
+        </div>
+    </section>
+    
+<div class="services">
+     <div class="title">
+        <h2> OUR SERVICES</h2>
+
+     </div>
+     <div class="box">
+        <div class="card">
+            <i class="fa-solid fa-bars"></i>
+            <h5> WEB DEVELOPMENT</h5>
+            <div class="pra">
+                <p>
+                    EVERY WEBSITE SHOULD BE BUILT WITH TWO PRIMARY GOALS:
+                    <p style="text-align: center;">
+                    <a class="button" href="#"> READ MORE</a>
+                </p>
+                
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-regular fa-user"></i>
+                <h5> WEB DEVELOPMENT</h5>
+                <div class="pra">
+                    <p>
+                        EVERY WEBSITE SHOULD BE BUILT WITH TWO PRIMARY GOALS:
+                        <p style="text-align: center;">
+                        <a class="button" href="#"> READ MORE</a>
+                    </p>
+                    
+                </div>
+    
+            </div>
+         </div>
+         <div class="box">
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5> WEB DEVELOPMENT</h5>
+                <div class="pra">
+                    <p>
+                        EVERY WEBSITE SHOULD BE BUILT WITH TWO PRIMARY GOALS:
+                        <p style="text-align: center;">
+                        <a class="button" href="#"> READ MORE</a>
+                    </p>
+                    
+                </div>
+    
+            </div>
+         </div>
+    </div>
+    
+   
+</div>
+<div class="contact-me">
+    <p>LET ME GET YOU A BEAUTIFUL WEBSITE.</p>
+    <a class="button-two" href="#">HIRE ME</a>
+
+</div>
+<footer>
+    <p> KARL IVAN LOPE</p>
+    <p> For more inquires just call me 09954754774  and click the link below</p>
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p class="end">CopyRight by Lope</p>
+</footer>
 </body>
 </html>
